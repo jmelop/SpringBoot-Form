@@ -1,12 +1,33 @@
 package com.nex.springboot.form.app.models.domain;
 
-public class User {
+import javax.validation.constraints.NotEmpty;
 
+public class User {
+	
+	private String id;
+
+	@NotEmpty
 	private String username;
+	
+	@NotEmpty
 	private String password;
+	
+	@NotEmpty
 	private String email;
+	
+	@NotEmpty
 	private String firstName;
+	
+	@NotEmpty
 	private String lastName;
+	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
 
 	public String getUsername() {
 		return username;
